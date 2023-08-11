@@ -41,7 +41,7 @@ git init # 若已經初始化過就可以不用輸入
 git add .
 git commit -m 'first commit'
 git branch -M main
-git remote add origin [GitHub Repositories Url]
+git remote add origin https://github.com/shcopy/2023week3-4.git
 git push -u origin main // 僅限第一次輸入，往後只需要輸入 git push
 ```
 
