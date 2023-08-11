@@ -2,3 +2,353 @@
   background: #69F0AE;
   font-size: 64px;
 }
+
+.pt-10 {
+	padding-top: 40px;
+}
+
+.pt-12 {
+	padding-top: 48px;
+}
+
+.pt-15 {
+	padding-top: 60px;
+}
+
+.pt-18 {
+	padding-top: 72px;
+}
+
+.pt-20 {
+	padding-top: 80px;
+}
+
+.pt-24 {
+	padding-top: 96px;
+}
+
+
+.pt-32 {
+	padding-top: 128px;
+}
+
+.pt-40 {
+	padding-top: 160px;
+}
+
+.pb-8 {
+	padding-bottom: 32px;
+}
+
+.pb-10 {
+	padding-bottom: 40px;
+}
+
+.pb-12 {
+	padding-bottom: 48px;
+}
+
+.pb-18 {
+	padding-bottom: 72px;
+}
+
+.pb-19 {
+	padding-bottom: 76px;
+}
+
+.pb-20 {
+	padding-bottom: 80px;
+}
+
+.pb-22 {
+	padding-bottom: 88px;
+}
+
+.pb-32 {
+	padding-bottom: 128px;
+}
+
+
+
+.pb-40 {
+	padding-bottom: 160px;
+}
+
+.ml-a {
+	margin-left: auto;
+}
+
+.ml-1 {
+	margin-left: 4px;
+}
+
+.ml-2{
+	margin-left: 8px;
+}
+
+.ml-3 {
+	margin-left: 12px;
+}
+
+.ml-4 {
+	margin-left: 16px;
+}
+
+.ml-5 {
+	margin-left: 20px;
+}
+
+.ml-6 {
+	margin-left: 24px;
+}
+
+.ml-7 {
+	margin-left: 28px;
+}
+
+.ml-8 {
+	margin-left: 32px;
+}
+
+.ml-9 {
+	margin-left: 36px;
+}
+
+.ml-10 {
+	margin-left: 40px;
+}
+
+.ml-25 {
+	margin-left: 100px;
+}
+
+.ml-28 {
+	margin-left: 112px;
+}
+
+.mr-a {
+	margin-right: auto;
+}
+
+.mr-1 {
+	margin-right: 4px;
+}
+
+.mr-3 {
+	margin-right: 12px;
+}
+
+.mr-5 {
+	margin-right: 20px;
+}
+
+.mr-6 {
+	margin-right: 24px;
+}
+
+.mt-6{
+	margin-top: 24px;
+}
+
+.mt-10 {
+	margin-top: 40px;
+}
+
+.mt-12 {
+	margin-top: 48px;
+}
+
+.mb-2{
+	margin-bottom: 8px;
+}
+
+.mb-4 {
+	margin-bottom: 16px;
+}
+
+
+.mb-6 {
+	margin-bottom: 24px;
+}
+
+.mb-7 {
+	margin-bottom: 28px;
+}
+
+.mb-8{
+	margin-bottom: 32px;
+}
+
+.mb-9 {
+	margin-bottom: 36px;
+}
+
+.mb-10 {
+	margin-bottom: 40px;
+}
+
+
+.mb-40 {
+	margin-bottom: 160px;
+}
+
+.item-left{
+	text-align-last: left;
+}
+
+.item-center {
+	text-align: center;
+}
+
+.item-right {
+	text-align: right;
+}
+
+.flex {
+	display: flex;
+}
+
+/* 決定 flex 軸線方向*/
+.flex-col {
+	flex-direction: column;
+}
+
+.flex-row-reverse {
+	flex-direction: row-reverse;
+}
+
+.flex-column-reverse {
+	flex-direction: column-reverse;
+}
+
+/* 主要軸線的對齊 (水平) X → */
+.justify-center {
+	justify-content: center;                                     
+}
+
+.justify-end {
+	justify-content: flex-end;                                  
+}
+
+.justify-around {
+	justify-content: space-around;  
+}
+
+.justify-between {
+	justify-content: space-between;      
+}
+
+.justify-evenly {
+	justify-content: space-evenly;
+}
+
+/* 交錯軸線的對齊 (垂直) Y ↓ */
+.align-start {
+	align-items: flex-start;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.align-end {
+	align-items: flex-end; 
+}
+
+.align-stretch {
+	align-items: stretch;
+}
+
+.align-baseline {
+	align-items: baseline;
+}
+
+/* 決定換行的屬性 (換行) */
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+	flex-wrap: wrap-reverse;
+}
+
+.self-start {
+	align-self: flex-start;
+}
+
+.self-center {
+	align-self: flex-center;
+}
+
+.self-end {
+	align-self: flex-end;
+}
+
+/*img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}*/
+
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+.w-174 {
+	width: 174px;
+}
+
+.w-208 {
+	width: 208px;
+}
+
+
+body {
+  /* 先套用 Noto Sans TC 這個 思源黑體 */
+font-family: 'Noto Sans TC', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1296px;
+}
+
+h1.logo {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.nav-width {
+	width: 412px;
+ }
+
+.nav {
+	/* UI Properties */
+	background: #AA0601
+}
+
+.nav li {
+	/*width: 80px;*/
+	text-align: center;
+}
+
+.nav li a {
+	color: #FFFFFF;
+	font-size: 20px;
+	/*display: block;*/
+}
+
+.nav li a:hover {
+	color: #ff0000;
+}
+
+.page-title-h2 {
+	border-left: 8px solid #9F1213;
+	font-size: 48px;
+	font-weight: bold;
+	padding-left: 16px;
+} 

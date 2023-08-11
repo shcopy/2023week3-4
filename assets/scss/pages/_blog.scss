@@ -1,0 +1,37 @@
+.blog-sub-nav {
+    background-color:#650300;
+   li{
+    width: 100px;
+    margin-right: 48px;
+    padding-top: 13px;
+    padding-bottom: 13px; 
+   }
+   
+    li a{
+        font-size: 20px;
+        color:#ffffff;
+    }
+}
+
+
+.blog {
+    h3{
+        color:#650300;
+        font-size: 32px;
+    }
+    h4{
+        color:#000000;
+        font-size: 24px;
+    }
+
+    p{
+        color:#555555;
+        font-size: 20px;
+    }
+
+    .nav-link {
+        color: #650300;
+        font-size: 36px;
+        font-weight: 900;
+    }
+}

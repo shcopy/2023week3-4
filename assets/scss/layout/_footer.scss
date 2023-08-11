@@ -1,4 +1,51 @@
-.footer{
+/*.footer{
   background: #69F0AE;
   font-size: 64px;
+}
+*/
+
+footer {
+	background-color:#aa0601;
+}
+
+.footer-width {
+	width: 480px;
+}
+
+footer ul li {
+	text-align: center;
+}
+
+footer ul li a {
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+footer ul li a:hover {
+	color: #ff0000;
+}
+
+.contact-info-tel  {
+	font-size: 36px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.contact-info-email {
+	font-size: 36px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.contact-info hr {
+	border: 1px solid #FFFFFF;
+	margin-top: 32px;
+	margin-bottom: 32px;
+}
+
+.copyright {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-family: "Roboto", serif;
 }
