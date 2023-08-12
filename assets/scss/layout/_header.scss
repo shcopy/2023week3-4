@@ -134,8 +134,17 @@
 	margin-right: 4px;
 }
 
+.mr-2{
+	margin-right: 8px;
+}
+
+
 .mr-3 {
 	margin-right: 12px;
+}
+
+.mr-4 {
+	margin-right: 16px;
 }
 
 .mr-5 {
@@ -144,6 +153,10 @@
 
 .mr-6 {
 	margin-right: 24px;
+}
+
+.mt-2{
+	margin-top: 8px;
 }
 
 .mt-6 {
@@ -191,6 +204,9 @@
 	margin-bottom: 60px;
 }
 
+.mb-20 {
+	margin-bottom: 80px;
+}
 
 .mb-40 {
 	margin-bottom: 160px;
@@ -288,11 +304,12 @@
 	align-self: flex-end;
 }
 
-/*img {
+
+img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
-}*/
+}
 
 *,
 *:before,
@@ -308,6 +325,13 @@
 	width: 208px;
 }
 
+.w-440{
+	width: 440px;
+}
+
+.w-856 {
+	width: 856px;
+}
 
 body {
 	/* 先套用 Noto Sans TC 這個 思源黑體 */
@@ -382,3 +406,20 @@ h1.logo {
 		}
 	}
 }
+
+.breadcrumb-item {
+	.active {
+		color:#aa0601;
+	}
+	a {
+		color:#000000;
+	}
+
+	a::after {
+		content: ' / ';
+	}
+	
+}
+
+
+
