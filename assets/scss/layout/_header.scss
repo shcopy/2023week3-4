@@ -1,6 +1,6 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header {
+	background: #69F0AE;
+	font-size: 64px;
 }
 
 .pt-10 {
@@ -82,7 +82,7 @@
 	margin-left: 4px;
 }
 
-.ml-2{
+.ml-2 {
 	margin-left: 8px;
 }
 
@@ -146,7 +146,7 @@
 	margin-right: 24px;
 }
 
-.mt-6{
+.mt-6 {
 	margin-top: 24px;
 }
 
@@ -158,7 +158,7 @@
 	margin-top: 48px;
 }
 
-.mb-2{
+.mb-2 {
 	margin-bottom: 8px;
 }
 
@@ -175,7 +175,7 @@
 	margin-bottom: 28px;
 }
 
-.mb-8{
+.mb-8 {
 	margin-bottom: 32px;
 }
 
@@ -187,12 +187,16 @@
 	margin-bottom: 40px;
 }
 
+.mb-15 {
+	margin-bottom: 60px;
+}
+
 
 .mb-40 {
 	margin-bottom: 160px;
 }
 
-.item-left{
+.item-left {
 	text-align-last: left;
 }
 
@@ -223,19 +227,19 @@
 
 /* 主要軸線的對齊 (水平) X → */
 .justify-center {
-	justify-content: center;                                     
+	justify-content: center;
 }
 
 .justify-end {
-	justify-content: flex-end;                                  
+	justify-content: flex-end;
 }
 
 .justify-around {
-	justify-content: space-around;  
+	justify-content: space-around;
 }
 
 .justify-between {
-	justify-content: space-between;      
+	justify-content: space-between;
 }
 
 .justify-evenly {
@@ -252,7 +256,7 @@
 }
 
 .align-end {
-	align-items: flex-end; 
+	align-items: flex-end;
 }
 
 .align-stretch {
@@ -290,7 +294,9 @@
   vertical-align: middle;
 }*/
 
-*,*:before,*:after {
+*,
+*:before,
+*:after {
 	box-sizing: border-box;
 }
 
@@ -304,8 +310,8 @@
 
 
 body {
-  /* 先套用 Noto Sans TC 這個 思源黑體 */
-font-family: 'Noto Sans TC', sans-serif;
+	/* 先套用 Noto Sans TC 這個 思源黑體 */
+	font-family: 'Noto Sans TC', sans-serif;
 }
 
 a {
@@ -324,7 +330,7 @@ h1.logo {
 
 .nav-width {
 	width: 412px;
- }
+}
 
 .nav {
 	/* UI Properties */
@@ -351,4 +357,28 @@ h1.logo {
 	font-size: 48px;
 	font-weight: bold;
 	padding-left: 16px;
-} 
+}
+
+.pagination-bar {
+	li {
+		display: inline;
+		text-align: center;
+
+		a {
+			color: #555555;
+			font-size: 18px;
+			border: 1px solid #555555;
+			padding: 12px 16px;
+		}
+
+		a.focus {
+			color: #555555;
+			background: #000000;
+		}
+
+		a:hover {
+			color: #FFFFFF;
+			background: #000000;
+		}
+	}
+}

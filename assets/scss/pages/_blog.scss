@@ -13,7 +13,6 @@
     }
 }
 
-
 .blog {
     h3{
         color:#650300;
@@ -24,12 +23,17 @@
         font-size: 24px;
     }
 
+    .date {
+        font-size: 16px;
+        color:#000000;
+    }
+
     p{
         color:#555555;
         font-size: 20px;
     }
 
-    .nav-link {
+    .more-link {
         color: #650300;
         font-size: 36px;
         font-weight: 900;
