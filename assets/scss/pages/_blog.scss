@@ -63,6 +63,20 @@
     }
 }
 
+.breadcrumb-item {
+	&.active {
+		color:#aa0601;
+	}
+	a {
+		color:#000000;
+	}
+
+	a::after {
+		content: ' / ';
+	}
+	
+}
+
 .tags-title {
 	font-size: 32px;
     color:#aa0601;
