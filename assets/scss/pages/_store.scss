@@ -60,4 +60,27 @@
         padding-bottom: 16px;
         color: #FFFFFF;
     }
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+
+
+    .card-item-3c {
+        width:31%;
+        margin-right: 24px;
+        margin-bottom: 80px;
+    }
+
+
+    .card-item-4c {
+        width:23%;
+        margin-right: 24px;
+        margin-bottom: 80px;
+    }
+   
+
+
 }

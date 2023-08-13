@@ -26,7 +26,6 @@
     }
 }
 
-
 .product {
     h2 {
         font-size: 42px;
@@ -35,7 +34,6 @@
     h3 {
         font-size: 32px;
     }
-
 
     .product-key {
         font-size: 24px;
@@ -60,4 +58,41 @@
         background-color: #B75929;
         border-radius: 4px;
     }
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .card-item-4c {
+        width:23%;
+        margin-right: 24px;
+        margin-bottom: 80px;
+    }
+    
+    .card-item-3c {
+        width:31%;
+        margin-right: 24px;
+        margin-bottom: 80px;
+    }
 }
+
+@media (max-width: 768px) {
+	.card-item {
+	  width:50%
+	}
+	.container {
+	  max-width: 696px;
+	  margin: 0 auto;
+	}
+  }
+
+  @media (max-width: 576px) {
+	.card-item {
+	  width: 100%
+	}
+	.container {
+	  max-width: 348px;
+	  margin: 0 auto;
+	}
+  }

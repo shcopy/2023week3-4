@@ -1,8 +1,3 @@
-.header {
-	background: #69F0AE;
-	font-size: 64px;
-}
-
 .pt-10 {
 	padding-top: 40px;
 }
@@ -32,9 +27,18 @@
 	padding-top: 128px;
 }
 
+.pt-74{
+	padding-top: 296px;
+}
+
 .pt-40 {
 	padding-top: 160px;
 }
+
+.pb-3{
+	padding-bottom: 12px;
+}
+
 
 .pb-8 {
 	padding-bottom: 32px;
@@ -67,8 +71,6 @@
 .pb-32 {
 	padding-bottom: 128px;
 }
-
-
 
 .pb-40 {
 	padding-bottom: 160px;
@@ -173,6 +175,10 @@
 
 .mb-2 {
 	margin-bottom: 8px;
+}
+
+.mb-3 {
+	margin-bottom: 12px;
 }
 
 .mb-4 {
@@ -304,16 +310,15 @@
 	align-self: flex-end;
 }
 
-
+/* rwd img css，可當作是 CSS Reset 其中一個 */
 img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
 }
 
-*,
-*:before,
-*:after {
+/* 全域 border box */
+*, *:before, *:after {
 	box-sizing: border-box;
 }
 
@@ -333,9 +338,12 @@ img {
 	width: 856px;
 }
 
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
 body {
 	/* 先套用 Noto Sans TC 這個 思源黑體 */
 	font-family: 'Noto Sans TC', sans-serif;
+	line-height: 1.5;
 }
 
 a {
@@ -343,8 +351,27 @@ a {
 }
 
 .container {
-	margin: 0 auto;
 	max-width: 1296px;
+	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 696px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 576px) {
+	.container {
+		max-width: 348px;
+		margin: 0 auto;
+	}
+}
+
+.header {
+	background: #69F0AE;
+	font-size: 64px;
 }
 
 h1.logo {
@@ -376,6 +403,9 @@ h1.logo {
 	color: #ff0000;
 }
 
+
+
+
 .page-title-h2 {
 	border-left: 8px solid #9F1213;
 	font-size: 48px;
@@ -406,6 +436,8 @@ h1.logo {
 		}
 	}
 }
+
+
 
 
 
