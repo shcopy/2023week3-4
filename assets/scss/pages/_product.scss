@@ -1,103 +1,66 @@
 /* components */
 .product-category-bar {
-	/*padding: 16px 0;*/
-	padding-top: 60px;
+	// padding: 16px 0;
+	// padding-top: 60px;
     
 	/* 平板 */
 	@media (max-width: 768px) {
 		padding-bottom: 0;
 	}
 
-	.product-category-bar-wrap {
-		display: flex;
-		justify-content: space-between;
-	
-		 /* 平板 */
-		@media (max-width: 768px) {
-			flex-direction: column;
-			/* 移除左右 padding 再加入 max-width: 100%; 讓導覽列能變為滿版 */
-			padding-left: 0;
-			padding-right: 0;
-			max-width: 100%;
-		}
+    /* 平板 */
+    @media (max-width: 768px) {
+        //flex-direction: column;
+        /* 移除左右 padding 再加入 max-width: 100%; 讓導覽列能變為滿版 */
+        //padding-left: 0;
+        //padding-right: 0;
+        //max-width: 100%;
+    }
 
-		.product-category-bar-nav {
-			display: flex;
-			/*align-items: center;*/
-		
-			/* 平板 */
-			@media (max-width: 768px) {
-				flex-wrap: wrap;
-			}
-			.product-category-bar-item {
-				height: 100%;
-				
-				/* 平板 */
-				@media (max-width: 768px) {
-					width: 50%;
-					margin-right: 0px;
-					border: 1px solid #ffffff;
-				}
-			}
-			
-			.product-category-bar-link {
-				height: 100%;
-				display: block;
-				
-				padding-top: 4px;
-				padding-bottom: 4px;
-				padding-right: 48px;
+    .product-category-bar-nav {
+        display: flex;
+        align-items: center;
+        //border: 1px solid #DCDCDC;
+        /* 平板 */
+        @media (max-width: 768px) {
 
-				font-size: 14px;
-				color: #FFFFFF;
-				/*background: #69F0AE;*/
-			
-				/* 平板 */
-				@media (max-width: 768px) {
+        }
 
-				}
-				  
-				&:hover{
-					opacity: 0.7;
-				}
-			}
-
-			.product-category-bar-item:last-child .product-category-bar-link {
-				padding-right: 0;
-			}
-		}
-	}
-}
-
-/*
-.product-sub-nav {
-    li {
-        width: 432px;
-        border: 1px solid #DCDCDC;
-
-        a {
-            display: block;
-            font-family: "Roboto", "Medium";
-            color: #000000;
+        .product-category-bar-item {
             text-align: center;
+            /* 平板 */
+            @media (max-width: 768px) {
+
+            }
+        }
+        
+        .product-category-bar-link {
+            border: 1px solid #DCDCDC;
+            display: block;
+            color: #000000;
+            
             font-size: 32px;
             font-weight: medium;
             padding-top: 24px;
             padding-bottom: 16px;
             padding-left: 150px;
             padding-right: 150px;
+        
+            /* 平板 */
+            @media (max-width: 768px) {
 
-            &.focus {
-                border-bottom: 8px solid #aa0601;
             }
+                
+            &:hover{
+                opacity: 0.7;
+            }
+        }
 
-            &:hover {
-                border-bottom: 8px solid #aa0601;
-            }
+        .product-category-bar-item:last-child .product-category-bar-link {
+            padding-right: 0;
         }
     }
 }
-*/
 
 .product {
     h2 {
@@ -131,38 +94,4 @@
         background-color: #B75929;
         border-radius: 4px;
     }
-
-    .card {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .card-item-4c {
-        width:23%;
-        margin-right: 24px;
-        margin-bottom: 80px;
-    }
-    
-    .card-item-3c {
-        width:31%;
-        margin-right: 24px;
-        margin-bottom: 80px;
-    }
-
-    @media (max-width: 768px) {
-        .card-item-4c, .card-item-3c {
-            width: 45%;
-            margin-right: 24px;	
-            margin-bottom: 60px;
-        }
-    }
-       
-    @media (max-width: 576px) {
-        .card-item-4c, .card-item-3c {
-            width:100%;
-            margin-right: 24px;
-            margin-bottom: 24px;
-        } 
-    }
-
 }
