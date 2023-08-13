@@ -66,20 +66,31 @@
         flex-wrap: wrap;
     }
     
-
-
-    .card-item-3c {
+    .card-item {
         width:31%;
         margin-right: 24px;
         margin-bottom: 80px;
     }
 
-
-    .card-item-4c {
-        width:23%;
-        margin-right: 24px;
-        margin-bottom: 80px;
+    @media (max-width: 768px) {
+        .card-item {
+			width: 45%;
+			margin-right: 24px;	
+			margin-bottom: 60px;
+		}
     }
+       
+    @media (max-width: 576px) {
+        .card-item {
+            width:100%;
+        }
+    }
+
+
+
+
+
+
    
 
 
