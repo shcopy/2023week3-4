@@ -1,69 +1,31 @@
-/* components */
 .product-category-bar {
-	// padding: 16px 0;
-	// padding-top: 60px;
-    
-	/* 平板 */
-	@media (max-width: 768px) {
-		padding-bottom: 0;
-	}
-
-    /* 平板 */
-    @media (max-width: 768px) {
-        //flex-direction: column;
-        /* 移除左右 padding 再加入 max-width: 100%; 讓導覽列能變為滿版 */
-        //padding-left: 0;
-        //padding-right: 0;
-        //max-width: 100%;
-    }
 
     .product-category-bar-nav {
         display: flex;
         align-items: center;
-        //border: 1px solid #DCDCDC;
-        /* 平板 */
-        @media (max-width: 768px) {
-
-        }
 
         .product-category-bar-item {
-            text-align: center;
-            /* 平板 */
-            @media (max-width: 768px) {
-
-            }
-        }
-        
-        .product-category-bar-link {
             border: 1px solid #DCDCDC;
+            padding: 24px 150px;  
+            
+        }
+    
+        .product-category-bar-link {
             display: block;
             color: #000000;
-            
             font-size: 32px;
-            font-weight: medium;
-            padding-top: 24px;
-            padding-bottom: 16px;
-            padding-left: 150px;
-            padding-right: 150px;
-        
-            /* 平板 */
-            @media (max-width: 768px) {
-
-            }
-                
-            &:hover{
-                opacity: 0.7;
-            }
+            font-weight: medium;  
         }
 
-        .product-category-bar-item:last-child .product-category-bar-link {
-            padding-right: 0;
+        .active {
+            padding-bottom: 24px;
+            border-bottom: 7px solid #aa0601;
         }
     }
 }
 
 .product {
-    h2 {
+     h2 {
         font-size: 42px;
     }
 

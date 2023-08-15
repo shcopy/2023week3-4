@@ -1,46 +1,102 @@
 .store {
-    .label-text {
-        font-size: 24px;
+    .main {
+        // store-introduction 及 store-map 顯示方式:
+        display: flex;
+        
+        // 在 "PC" 顯示 "左右-row " 顯示兩個內層區塊
+        flex-direction: row;
+        justify-content: space-between; // 平均分配寬度
+
+        // 在 "平板"及"手機" 顯示 "上下-column" 顯示兩個內層區塊
+        // 平板
+        @media (max-width: 768px) {
+            flex-direction:column;
+        }
+
+        // 手機
+        @media (max-width: 576px) {
+            flex-direction: column;
+        }
     }
 
-    .store-region {
-        width: 304px;
-        background-color: #ffffff;
-        border: 1px solid #CED4DA;
-        padding-top: 6px;
-        padding-bottom: 6px;
-        padding-left: 12px;
-        color:#495057;
+    .store-introduction {
+         width: 40.6%;
+         //width: 526px;
+
+        // 商店介紹區塊 圖片 及 文字 的顯示方式:
+        display: flex;
+        
+        // 在 "PC" 顯示 "上下 column" 顯示兩個內層區塊
+        flex-direction: column;
+     
+        // 在 "平板" 顯示 "左右 row" 顯示兩個內層區塊
+        // 平板
+        @media (max-width: 768px) {
+            width: 100%;
+            flex-direction: row;
+            margin-bottom: 24px;
+        }
+        
+        // 在 "手機" 顯示 "上下 column" 顯示兩個內層區塊
+        // 手機
+        @media (max-width: 576px) {
+            width: 100%;
+            flex-direction: column;
+            margin-bottom: 24px;
+        }   
     }
 
-    .store-station {
-        width: 304px;
-        background-color: #ffffff;
-        border: 1px solid #CED4DA;
-        padding-top: 6px;
-        padding-bottom: 6px;
-        padding-left: 12px;
-        color:#495057;
+    .store-photo {
+        max-width: 100%;
+        // 平板
+        @media (max-width: 768px) {
+            width: 64.1%;
+        }
+
+        // 在 "手機" 顯示 "上下 column" 顯示兩個內層區塊
+        // 手機
+        @media (max-width: 576px) {
+           width: 100%;
+        }   
+    }
+
+    .store-info {
+         max-width: 100%;
+        // 平板
+        @media (max-width: 768px) {
+            width: 64.1%;
+        }
+        // 在 "手機" 顯示 "上下 column" 顯示兩個內層區塊
+        // 手機
+        @media (max-width: 576px) {
+           width: 100%;
+        }  
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .store-map {
+        width: 57.6%;
+        
+        @media (max-width: 768px) {
+           width: 100%;
+            flex-direction: row;
+            justify-content: space-between; // 平均分配寬度
+        }   
+
+         // 手機
+         @media (max-width: 576px) {
+            width: 100%;
+         }   
     }
 
     h3 {
         font-size: 24px;
-        border: 1px solid #00000020;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-left: 24px;
         color:#212529;
     }
 
-    .store-text {
-        border: 1px solid #00000020;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        font-size: 20px;
-        color:#212529;
-    }
-
-    .store-link-a {
+    .store-detail-link {
         display: block;
         background-color: black;
         text-align: center;
@@ -49,12 +105,4 @@
         padding-bottom: 16px;
         color: #FFFFFF;
     } 
-
-    	// 平板
-	@media (max-width: 768px) {
-		.col-md-12 {
-			width: 100%;
-			margin-bottom: 24px;
-		}
-	}
 }

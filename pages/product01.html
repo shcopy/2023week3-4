@@ -12,19 +12,19 @@
     <div class="product-category-bar">
       <div class="container">
           <ul class="product-category-bar-nav">
-            <li class="product-category-bar-item"><a class="product-category-bar-link" href="product01.html">OPTICAL</a></li>
+            <li class="product-category-bar-item active"><a class="product-category-bar-link" href="product01.html">OPTICAL</a></li>
             <li class="product-category-bar-item"><a class="product-category-bar-link" href="product02.html">SUNGLASSES</a></li>
             <li class="product-category-bar-item"><a class="product-category-bar-link" href="#">FUNCTIONAL</a></li>
           </ul>
       </div>
   </div>
 
-    <div class="flex">
+    <div class="flex mb-20">
       <img src="../assets/images/product-header-1.png" class="col-6 col-md-6 col-sm-6" alt="product" />
       <img src="../assets/images/product-header-2.png" class="col-6 col-md-6 col-sm-6" alt="product" />
     </div>
-    <div class="product">
-      <div class="container pt-20 pb-20 text-center">
+    <div class="product mb-20">
+      <div class="container">
         <h2 class="text-center">Celluloid Combi</h2>
         <h3 class="text-center mb-8">賽璐珞鈦金屬混合鏡框</h3>
         <ul class="row flex-wrap">
@@ -162,17 +162,19 @@
           </li>
         </ul>
 
-        <div class="text-center">
-          <ul class="pagination-bar">
-            <li><a href="#">上一頁</a></li>
-            <li><a href="#">1</a></li>
-            <li><a class="focus" href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">下一頁</a></li>
-          </ul>        
-        </div>
+        <ul class="pagination-bar-nav text-center">
+          <li class="pagination-bar-item"><a class="pagination-bar-link" href="#">上一頁</a></li>
+          <li class="pagination-bar-item"><a class="pagination-bar-link" href="#">1</a></li>
+          <li class="pagination-bar-item"><a class="pagination-bar-link active" href="#">2</a></li>
+          <li class="pagination-bar-item"><a class="pagination-bar-link" href="#">3</a></li>
+          <li class="pagination-bar-item"><a class="pagination-bar-link" href="#">4</a></li>
+          <li class="pagination-bar-item"><a class="pagination-bar-link" href="#">5</a></li>
+          <li class="pagination-bar-item"><a class="pagination-bar-link" href="#">下一頁</a></li>
+        </ul> 
+      </div>
+
+      <div class="text-center">
+       
       </div>
     </div>
     <%- include('./layout/footer'); -%>
