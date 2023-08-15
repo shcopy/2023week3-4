@@ -34,6 +34,8 @@
         @media (max-width: 768px) {
             width: 100%;
             flex-direction: row;
+            //justify-content: space-between;
+            justify-content: space-between;
             margin-bottom: 24px;
         }
         
@@ -50,7 +52,10 @@
         max-width: 100%;
         // 平板
         @media (max-width: 768px) {
-            width: 64.1%;
+            width: 49%;   // 64.1
+            img{
+                height: 100%;
+            }
         }
 
         // 在 "手機" 顯示 "上下 column" 顯示兩個內層區塊
@@ -64,7 +69,7 @@
          max-width: 100%;
         // 平板
         @media (max-width: 768px) {
-            width: 64.1%;
+            width: 49%;  //64.1
         }
         // 在 "手機" 顯示 "上下 column" 顯示兩個內層區塊
         // 手機
@@ -78,7 +83,7 @@
 
     .store-map {
         width: 57.6%;
-        
+    
         @media (max-width: 768px) {
            width: 100%;
             flex-direction: row;
