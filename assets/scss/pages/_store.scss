@@ -1,3 +1,15 @@
+@mixin pad{
+	@media(max-width:768px){
+		@content;
+	}
+}
+
+@mixin mobile{
+	@media(max-width:767px){
+		@content;
+	}
+}
+
 .store {
     .main {
         // store-introduction 及 store-map 顯示方式:
@@ -9,12 +21,12 @@
 
         // 在 "平板"及"手機" 顯示 "上下-column" 顯示兩個內層區塊
         // 平板
-        @media (max-width: 768px) {
+        @include pad{
             flex-direction:column;
         }
 
         // 手機
-        @media (max-width: 576px) {
+        @include mobile{
             flex-direction: column;
         }
     }
@@ -31,7 +43,7 @@
      
         // 在 "平板" 顯示 "左右 row" 顯示兩個內層區塊
         // 平板
-        @media (max-width: 768px) {
+        @include pad{
             width: 100%;
             flex-direction: row;
             //justify-content: space-between;
@@ -41,7 +53,7 @@
         
         // 在 "手機" 顯示 "上下 column" 顯示兩個內層區塊
         // 手機
-        @media (max-width: 576px) {
+        @include mobile{
             width: 100%;
             flex-direction: column;
             margin-bottom: 24px;
@@ -51,7 +63,7 @@
     .store-photo {
         max-width: 100%;
         // 平板
-        @media (max-width: 768px) {
+        @include pad{
             width: 49%;   // 64.1
             img{
                 height: 100%;
@@ -60,7 +72,7 @@
 
         // 在 "手機" 顯示 "上下 column" 顯示兩個內層區塊
         // 手機
-        @media (max-width: 576px) {
+        @include mobile{
            width: 100%;
         }   
     }
@@ -68,12 +80,12 @@
     .store-info {
          max-width: 100%;
         // 平板
-        @media (max-width: 768px) {
+        @include pad{
             width: 49%;  //64.1
         }
         // 在 "手機" 顯示 "上下 column" 顯示兩個內層區塊
         // 手機
-        @media (max-width: 576px) {
+        @include mobile{
            width: 100%;
         }  
         p {
@@ -84,14 +96,14 @@
     .store-map {
         width: 57.6%;
     
-        @media (max-width: 768px) {
+        @include pad{
            width: 100%;
             flex-direction: row;
             justify-content: space-between; // 平均分配寬度
         }   
 
          // 手機
-         @media (max-width: 576px) {
+         @include mobile{
             width: 100%;
          }   
     }

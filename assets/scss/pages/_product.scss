@@ -1,24 +1,44 @@
-.product-category-bar {
+@mixin pad{
+	@media(max-width:768px){
+		@content;
+	}
+}
 
+@mixin mobile{
+	@media(max-width:767px){
+		@content;
+	}
+}
+
+.product-category-bar {
     .product-category-bar-nav {
         display: flex;
         align-items: center;
 
         .product-category-bar-item {
             border: 1px solid #DCDCDC;
-            padding: 24px 150px;  
-            
+            // padding-top: 24px;
+            // padding-bottom: 24px;
+            width:33%; 
+            text-align: center;
         }
     
         .product-category-bar-link {
             display: block;
             color: #000000;
             font-size: 32px;
+           // background-color: #B75929;
             font-weight: medium;  
+            padding-top: 24px;
+            padding-bottom: 24px;
+
+            @include mobile {
+                font-size: 16px;
+            }
         }
 
         .active {
-            padding-bottom: 24px;
+            //padding-bottom: 24px;
             border-bottom: 7px solid #aa0601;
         }
     }

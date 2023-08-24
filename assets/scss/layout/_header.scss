@@ -1,3 +1,16 @@
+@mixin pad{
+	@media(max-width:768px){
+		@content;
+	}
+}
+
+@mixin mobile{
+	@media(max-width:767px){
+		@content;
+	}
+}
+
+
 /* 字型網址要放在最上面 */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:ital,wght@0,400;1,900&display=swap");
 
@@ -21,7 +34,7 @@ body {
 	justify-content: space-between;
 
  	/* 平板 */
-	@media (max-width: 768px) {
+	@include pad{
 		flex-direction: column;
 		/* 移除左右 padding 再加入 max-width: 100%; 讓導覽列能變為滿版 */
 		padding-left: 0;
@@ -34,7 +47,7 @@ body {
 	width: 80px;
 
 	/* 平板 */
-	@media (max-width: 768px) {
+	@include pad{
 		margin: 0 0 16px 16px;
 	}
 }
@@ -44,7 +57,7 @@ body {
 	align-items: center;
 
 	/* 平板 */
-	@media (max-width: 768px) {
+	@include pad{
 		flex-wrap: wrap;
 	}
 }
@@ -53,7 +66,7 @@ body {
 	height: 100%;
     
 	/* 平板 */
-	@media (max-width: 768px) {
+	@include pad{
 		width: 50%;
 		margin-right: 0px;
 		border: 1px solid #ffffff;
@@ -69,7 +82,7 @@ body {
 	/*background: #69F0AE;*/
 
 	/* 平板 */
-	@media (max-width: 768px) {
+	@include pad{
 		font-size: 16px;
 		text-align: center;
 		padding: 12px 0;

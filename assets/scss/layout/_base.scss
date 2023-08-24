@@ -370,6 +370,19 @@
 關於圖片的響應式設計，切記不要直接使用 width: 100%;，width: 100% 會讓圖片隨著外層容器變寬而被強制撐開，就會導致圖片變模糊。
 要使用 max-width: 100%; ，才能維持圖片本身的最大寬度。*/
 
+@mixin pad{
+	@media(max-width:768px){
+		@content;
+	}
+}
+
+@mixin mobile{
+	@media(max-width:767px){
+		@content;
+	}
+}
+
+
 img {
     max-width: 100%;
     height: auto;

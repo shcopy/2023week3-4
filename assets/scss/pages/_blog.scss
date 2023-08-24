@@ -1,3 +1,15 @@
+@mixin pad{
+	@media(max-width:768px){
+		@content;
+	}
+}
+
+@mixin mobile{
+	@media(max-width:767px){
+		@content;
+	}
+}
+
 .blog-sub-nav {
     background-color: #650300;
 
@@ -13,11 +25,8 @@
         color: #ffffff;
     }
 
-    @media (max-width: 768px) {
-
-    }
        
-    @media (max-width: 576px) {
+    @include mobile{
         display: none;
     }
 }
@@ -27,12 +36,12 @@
     padding-top: 96px;
     padding-bottom: 80px;
 
-    @media (max-width: 768px) {
+    @include pad{
         padding-top: 80px;
         padding-bottom: 80px;
     }
        
-    @media (max-width: 576px) {
+    @include mobile{
         padding-top: 40px;
         padding-bottom: 64px;
     }
@@ -50,12 +59,12 @@
         display: flex;
         flex-direction: row;
         margin-bottom: 60px;
-        @media (max-width: 768px) {
+        @include pad{
             flex-direction: row;
             margin-bottom: 24px;
         }
            
-        @media (max-width: 576px) {
+        @include mobile{
             flex-direction: column;
             margin-bottom: 24px;
         }
@@ -69,12 +78,12 @@
             width: 100%;
         }
 
-        @media (max-width: 768px) {
+        @include pad{
             width: 100%;
             margin-right: 24px;
         }
            
-        @media (max-width: 576px) {
+        @include mobile{
             width: 100%;
             margin-right: 0;
         }
@@ -87,11 +96,11 @@
 
         width: 50%;
 
-        @media (max-width: 768px) {
+        @include pad{
             width: 100%;
         }
            
-        @media (max-width: 576px) {
+        @include mobile{
             width: 100%;
         }
 
@@ -99,11 +108,11 @@
             color: #650300;
             font-size: 32px;
 
-            @media (max-width: 768px) {
+            @include pad{
                 font-size: 24px;
             }
                
-            @media (max-width: 576px) {
+            @include mobile{
                 font-size: 24px;
             }
         }
@@ -112,11 +121,11 @@
             color: #000000;
             font-size: 24px;
             font-weight: medium;
-            @media (max-width: 768px) {
+            @include pad{
                 font-size: 16px;
             }
                
-            @media (max-width: 576px) {
+            @include mobile{
                 font-size: 16px;
             }
         }
@@ -130,7 +139,7 @@
             color: #555555;
             font-size: 20px;
             margin-top: 16px;
-            @media (max-width: 768px) {
+            @include pad{
                 font-size: 16px;
                 margin-top: 4px;
 
@@ -139,7 +148,7 @@
                 text-overflow:ellipsis;
             }
 
-            @media (max-width: 576px) {
+            @include mobile{
                 display: none;
             }
         }
@@ -149,11 +158,11 @@
             font-size: 36px;
             font-weight: 900;
 
-            @media (max-width: 768px) {
+            @include pad{
                 display: none;
             }
 
-            @media (max-width: 576px) {
+            @include mobile{
                 display: none;
             }
         }
@@ -177,7 +186,7 @@
 .blog-tags {
     width: 440px;
     
-    @media (max-width: 576px) {
+    @include mobile{
         display: none;
     }
 }
