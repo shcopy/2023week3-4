@@ -399,11 +399,11 @@ a {
     margin: 0 auto;
     padding: 0 12px;
     /* 平板 */
-    @media (max-width: 768px) {
+    @include pad{
       max-width: 720px;
     }
     /* 手機 */
-    @media (max-width: 576px) {
+    @include mobile{
       max-width: 552px;
     }
   }
@@ -495,7 +495,7 @@ a {
 }
 
 // 平板
-@media (max-width: 768px) {
+@include pad{
 
     // 12 欄
     .col-md-1 {
@@ -549,7 +549,7 @@ a {
 }
 
   // 手機
-  @media (max-width: 579px) {
+  @include mobile{
     
     // 12 欄
     .col-sm-1 {

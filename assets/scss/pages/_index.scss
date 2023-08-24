@@ -189,7 +189,6 @@
 		padding: 16px;
 	}
 
-	// 平板
 	@include pad{
 		.col-md-6 {
 			margin-bottom: 16px;
@@ -199,8 +198,7 @@
 
 .contact {
 	padding: 80px 0;
-	
-	// 手機
+
 	@include mobile{
 		padding: 40px 0;
 	}
@@ -210,7 +208,6 @@
 		margin-bottom: 48px;
 		font-weight: bold; // 700
 
-		// 手機
 		@include mobile{
 			font-size: 24px;
 			margin-bottom: 24px;
@@ -219,7 +216,7 @@
 
 	.contact-conetnt {
 		font-size: 20px;
-		// 平板
+
 		@include mobile{
 			font-size: 16px;
 		}
@@ -252,11 +249,14 @@
 	}
 
 	.form-btn {
-		max-width: 416px;
+		width: 416px;
+		font-size: 16px;
+		font-family: "Roboto", "Noto Sans TC", sans-serif;
 	}
 
 	.form-btn:hover {
 		background-color: #650300;
 	}
+
 }
 
