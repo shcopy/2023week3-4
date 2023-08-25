@@ -166,9 +166,10 @@
             display: none;
             
             @include pad{
+                width:5em;
                 position: relative;
                 display: block;
-                right: -16em;
+                right: -70%;
                 bottom: 24px;
                 background: white;   
             }
