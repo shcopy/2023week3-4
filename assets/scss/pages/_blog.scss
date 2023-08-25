@@ -5,7 +5,7 @@
 }
 
 @mixin mobile{
-	@media(max-width:767px){
+	@media(max-width:576px){
 		@content;
 	}
 }
@@ -141,17 +141,21 @@
             color: #555555;
             font-size: 20px;
             margin-top: 16px;
+
             @include pad{
                 font-size: 16px;
                 margin-top: 4px;
+                max-height: 150px;
 
-                height: 144px;
-                overflow:hidden;
-                text-overflow:ellipsis;
-                
+                overflow: hidden;
+                display: -webkit-box;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 6; /*行數*/
+                -webkit-box-orient: vertical;
+                white-space: normal;
             }
 
-            @include mobile{
+            @include mobile {
                 display: none;
             }
         }
@@ -159,19 +163,20 @@
         .more {
             color:#555555;
             font-size: 16px;
-            opacity: 1;
-
+            display: none;
+            
             @include pad{
-                opacity: 0.5;
-                color:#d41111;
+                position: relative;
+                display: block;
+                right: -16em;
+                bottom: 24px;
+                background: white;   
             }
-               
+            
             @include mobile{
-                opacity: 1;
+                display: none;
             }
         }
-
-
 
         .more-link {
             color: #650300;
@@ -182,8 +187,8 @@
                 display: none;
             }
             
-            @media (max-width: 576px) {
-                display: none;
+            @media (max-width: 767px) {
+               // display: none;
             }
         }
     }
