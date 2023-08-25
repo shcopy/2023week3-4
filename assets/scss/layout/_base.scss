@@ -400,11 +400,11 @@ a {
     padding: 0 12px;
     /* 平板 */
     @include pad{
-      max-width: 720px;
+      max-width: 768px;
     }
     /* 手機 */
     @include mobile{
-      max-width: 552px;
+      max-width: 767px;
     }
   }
 

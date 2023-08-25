@@ -51,8 +51,10 @@
         font-size: 48px;
         font-weight: bold;
         padding-left: 16px;
+    }
 
-
+    a {
+        color:#650300;
     }
 
     .blog-content {
@@ -146,6 +148,7 @@
                 height: 144px;
                 overflow:hidden;
                 text-overflow:ellipsis;
+                
             }
 
             @include mobile{
@@ -153,16 +156,33 @@
             }
         }
 
+        .more {
+            color:#555555;
+            font-size: 16px;
+            opacity: 1;
+
+            @include pad{
+                opacity: 0.5;
+                color:#d41111;
+            }
+               
+            @include mobile{
+                opacity: 1;
+            }
+        }
+
+
+
         .more-link {
             color: #650300;
             font-size: 36px;
             font-weight: 900;
 
-            @include pad{
+            @media (max-width: 768px) {
                 display: none;
             }
-
-            @include mobile{
+            
+            @media (max-width: 576px) {
                 display: none;
             }
         }
@@ -180,6 +200,13 @@
 
     p{
         color:#555555;
+    }
+
+    hr {
+        border: 1px solid #707070;
+    }
+    a {
+        color:#000000;
     }
 }
 
